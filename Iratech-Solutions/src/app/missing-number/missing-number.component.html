@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row center"><b>Solution 1</b></div>
+  <div class="row">
+    Solution to problem one is : Sqaure of odd + 1 and sqaure od even
+    -1.Treating index as the position of number.
+  </div>
+  <div class="row mt-2 border">
+    <span class="mt-1">Please enter the position of the number</span>
+    <span class="mt-1 ml-2"
+      ><input type="number" [(ngModel)]="inputValue"
+    /></span>
+    <span class="mt-1 ml-2"
+      ><button class="btn btn-primary" (click)="resultedNumber(inputValue)">
+        Result
+      </button></span
+    >
+    <span class="mt-1 ml-2">Result is : {{ result }}</span>
+  </div>
+</div>
