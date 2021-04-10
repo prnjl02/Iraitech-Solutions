@@ -1,10 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MissingNumberComponent } from './missing-number/missing-number.component';
+import { PhoneNumberFormComponent } from './phone-number-form/phone-number-form.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'missingNumber',
+    component: MissingNumberComponent,
+  },
+  {
+    path: 'form',
+    component: PhoneNumberFormComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
+export const routingComponents = [
+  MissingNumberComponent,
+  PhoneNumberFormComponent,
+];

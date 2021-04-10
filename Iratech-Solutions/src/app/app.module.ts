@@ -2,12 +2,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MissingNumberComponent } from './missing-number/missing-number.component';
 
 @NgModule({
-  declarations: [AppComponent, MissingNumberComponent],
+  declarations: [AppComponent, routingComponents],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
